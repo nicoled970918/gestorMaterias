@@ -110,9 +110,9 @@ class Materia
         <h1>PÉNSUM ACADÉMICO</h1>
         <h2>Código: </h2><h2 id="cod"></h2>
         <div class="semestres" id="sems">
-        <div class="materias" id="mats">
-            
-        </div>
+            <div class="materias" id="mats">
+                <h3></h3><h3>⭐</h3>
+            </div>
         </div>
     </div>
 </body>
