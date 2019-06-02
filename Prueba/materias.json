@@ -1,0 +1,44 @@
+[
+    {
+      "codigo": 1,
+      "nombre": "CalculoI",
+      "Semestre": "Psiquico",
+      "Creditos": 2,
+      "Estado": false
+    },
+    {
+      "codigo": 2,
+      "nombre": "CalculoI",
+      "Semestre": "Psiquico",
+      "Creditos": 2,
+      "Estado": false
+    },
+    {
+      "codigo": 3,
+      "nombre": "CalculoI",
+      "Semestre": "Psiquico",
+      "Creditos": 2,
+      "Estado": false
+    },
+    {
+      "codigo": 4,
+      "nombre": "CalculoI",
+      "Semestre": "Psiquico",
+      "Creditos": 2,
+      "Estado": false
+    },
+    {
+      "codigo": 5,
+      "nombre": "CalculoI",
+      "Semestre": "Psiquico",
+      "Creditos": 2,
+      "Estado": false
+    },
+    {
+      "codigo": 6,
+      "nombre": "CalculoI",
+      "Semestre": "Psiquico",
+      "Creditos": 2,
+      "Estado": false
+    }
+  ]

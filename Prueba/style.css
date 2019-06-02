@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url(imag/fondoMAt.jpg);
+    -webkit-backface-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1
+{
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+#pS
+{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.visualizador
+{
+    overflow: hidden;
+    margin: auto 10px;
+    margin-left: 35px;
+    margin-bottom: 100px;
+}
+
+.semestre1
+{
+    width: 250px;
+    height: 290px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    margin-top: 70px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;  
+}
+
+.semestre2
+{
+    width: 250px;
+    height: 290px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    margin-top: 70px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;  
+    padding: 10px;
+}
+
+.semestre3
+{
+    width: 250px;
+    height: 290px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    margin-top: 70px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;  
+    padding: 10px;
+}
+
+.semestre4
+{
+    width: 250px;
+    height: 290px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    margin-top: 70px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;  
+    padding: 10px;
+}
+
+.semestre5
+{
+    width: 250px;
+    height: 290px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    margin-top: 70px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;  
+    padding: 10px;
+}
+
+.semestre6
+{
+    width: 250px;
+    height: 290px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    margin-top: 70px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;  
+    padding: 10px;
+}
+
+.semestre7
+{
+    width: 250px;
+    height: 290px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    margin-top: 70px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;  
+    padding: 10px;
+}
+
+.semestre8
+{
+    width: 250px;
+    height: 290px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    margin-top: 70px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;  
+    padding: 10px;
+}
+
+.semestre9
+{
+    width: 250px;
+    height: 290px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    margin-top: 70px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;  
+    padding: 10px;
+}
+
+.semestre10
+{
+    width: 250px;
+    height: 290px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    margin-top: 70px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;  
+    padding: 10px;
+}
+
+.materia
+{
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 20px;
+    text-align:left;
+    background: #ff851b;
+    color: rgb(7, 0, 0);
+    border: none;
+    width: 100%;
+    padding: 10px 10px;
+}
