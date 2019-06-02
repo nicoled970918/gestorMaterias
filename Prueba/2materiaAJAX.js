@@ -1,3 +1,7 @@
+function ingresarCod()
+{
+  document.formu.submit();
+}
 function peticion(codigo)
 {
   var xhttp = new XMLHttpRequest();
@@ -11,42 +15,37 @@ function peticion(codigo)
     xhttp.open("GET", "getMateria.php?codEstudiante="+codigo, false);
     xhttp.send();
 }
-//Función para hacer que la ejecución tarde unpoco para simular que hay retraso en el servidor
-function ingresarCod()
-{
-  document.formu.submit();
-}
 
 function cargarMaterias(materiaJSON, codigo)
 {
     var materia = JSON.parse(materiaJSON);
-    var sememestre = [];
-    var etiSemestre = $('[name="semestre"]').clone();
-    var etiMateria = $('[name="materia"]').clone();
+    var semestres = [];
+    var etiSemestre = $('[id="sems"]').clone();
+    var etiMateria = $('[id="mats"]').clone();
+    var cod = cod.attr("id", "c"+valor.codigo);
 
-    $('#codEstudiante').find('h2').text(codigo);
-    materia.foreach(function(valor, indice, array)
+    cod.find('#c').text(codigo);
+    
+    semestres.foreach(function(valor, indice, array)
     {
-      if(!semestre.includes(valor.semestre))
+      if(!semestres.includes(valor.semestre))
       {
-        semestre.push(valor.semestre);
-        etiSemestre.attr("id", "semestre"+valor.semestre);
-        etiSemestre.find('h1','#numeSemestre').text(valor.semestre);
+        semestres.push(valor.semestre);
+        etiSemestre.attr("id", "sems"+valor.semestre);
+        etiSemestre.find('h1','#s').text(valor.semestre);
         etiSemestre.css("display","inline");
-        etiSemestre.clone().appendTo('#visualizador');
+        etiSemestre.clone().appendTo('#vi');
       }
     });
+    semestres.sort();
 
-    sememestre.sort();
     materia.foreach(function(valor,indice,array)
     {
-      etiMateria.find('h2').text(valor.nombre);
-      etiMateria.find('h3').text('*'+valor.creditos);
+      etiMateria.find('#p').text(valor.nombre);
+      etiMateria.find('#creds').text(valor.creditos+'⭐');
       etiMateria.css("display", "block");
-      etiMateria.clone().appendTo('#semestre'+valor.semestre);
+      etiMateria.clone().appendTo('#sems'+valor.semestre);
     });
-    console.log(semestre);
+    console.log(cargarMaterias);
+    alert(cargarMaterias)
 }
-
-
-

@@ -7,23 +7,23 @@ class Materia
     public $nombre = null;
     public $semestre = 0;
     public $creditos = 0;
+    public $estado = false;
 
-    /*------------Constructor por parametros------------*/
-    function __construct(string $codigo, string $nombre, int $semestre, int $creditos)
+    function __construct(string $codigo, string $nombre, int $semestre, int $creditos, boolean $estado)
     {
         $this->codigo = $codigo;
         $this->nombre = $nombre;
         $this->semestre = $semestre;
         $this->creditos = $creditos;
+        $this->estado = $estado;
     }
 
     public static function createFromArray($arr)
     {
-        $materia = new Materia($arr["codigo"],$arr["nombre"],$arr["semestre"],$arr["creditos"]);
+        $materia = new Materia($arr["codigo"],$arr["nombre"],$arr["semestre"],$arr["creditos"], $arr["estado"]);
         return $materia;
     }
 
-    /*------------Set y get del codigo------------*/
     public function getCodigo()
     {
         return $this->codigo;
@@ -35,7 +35,6 @@ class Materia
         return $this;
     }
 
-    /*------------Set y get del nombre------------*/
     public function getNombre()
     {
         return $this->nombre;
@@ -47,7 +46,6 @@ class Materia
         return $this;
     }
 
-    /*------------Set y get del semestre------------*/
     public function getSemestre()
     {
         return $this->semestre;
@@ -59,7 +57,6 @@ class Materia
         return $this;
     }
 
-    /*------------Set y get de creditos------------*/
     public function getCreditos()
     {
         return $this->creditos;
@@ -68,6 +65,17 @@ class Materia
     public function setCreditos($creditos)
     {
         $this->creditos = $creditos;
+        return $this;
+    }
+
+    public function getEstado()
+    {
+        return $this->estado;
+    }
+
+    public function setEstado($estado)
+    {
+        $this->estado = $estado;
         return $this;
     }
 }
@@ -82,7 +90,7 @@ class Materia
 
 <head>
   <meta charset="utf-8" />
-  <title>Materias</title>
+  <title>controlMaterias</title>
    <link rel="stylesheet" type="text/css" href="style.css">
   <script src="2materiaAJAX.js"></script>
   <script>peticion(text);</script>
@@ -106,12 +114,27 @@ class Materia
         </div>
     </section> -->
 
-    <div class="visualizador">
+    <div id="vi" class="visualizador">
         <h1>PÉNSUM ACADÉMICO</h1>
-        <h2>Código: </h2><h2 id="cod"></h2>
-        <div class="semestres" id="sems">
-            <div class="materias" id="mats">
-                <h3></h3><h3>⭐</h3>
+        <h2 id="c">Código: </h2><h2 id="cod"></h2>
+        <p id="info"> 
+            <h1>Información:</h1>
+            A continuación, encontrará el control de materias del programa Ingeniería de Sistemas
+            organizado por semestres. 
+            El control funciona de la siguiente manera:
+            <p>1. Sí el nombre de la asignatura aparece en color blanco, quiere decir que el estudiante
+               aún no ha visto esa asignatura.</p>
+            <p>2. Sí el nombre de la asignatura aparece tachado y en color gris, quiere decir que el estudiante
+               ya vio esa asignatura.</p>
+
+            <p>Lista de materias.</p>
+        </p>
+        <div id="sems" class="semestres" >
+            <h1 id="s">SEMESTRE</h1>
+            <div id="mats" class="materias">
+                <p id="p">
+                </p>
+                <h3 id="creds">⭐</h3>
             </div>
         </div>
     </div>
