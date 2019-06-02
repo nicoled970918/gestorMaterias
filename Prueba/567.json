@@ -1,44 +1,44 @@
 [
     {
       "codigo": 1,
-      "nombre": "CalculoI",
-      "Semestre": "Psiquico",
-      "Creditos": 2,
-      "Estado": false
+      "nombre": "Cálculo I",
+      "semestre": "I",
+      "creditos": 4,
+      "estado": false
     },
     {
       "codigo": 2,
-      "nombre": "CalculoI",
-      "Semestre": "Psiquico",
-      "Creditos": 2,
-      "Estado": false
+      "nombre": "Introducción a la Ingeniería Informática",
+      "semestre": "I",
+      "creditos": 2,
+      "estado": false
     },
     {
       "codigo": 3,
-      "nombre": "CalculoI",
-      "Semestre": "Psiquico",
-      "Creditos": 2,
-      "Estado": false
+      "nombre": "Cálculo II",
+      "semestre": "II",
+      "creditos": 4,
+      "estado": false
     },
     {
       "codigo": 4,
-      "nombre": "CalculoI",
-      "Semestre": "Psiquico",
-      "Creditos": 2,
-      "Estado": false
+      "nombre": "POO",
+      "semestre": "II",
+      "creditos": 3,
+      "estado": false
     },
     {
       "codigo": 5,
-      "nombre": "CalculoI",
-      "Semestre": "Psiquico",
-      "Creditos": 2,
-      "Estado": false
+      "nombre": "Cáculo III",
+      "semestre": "III",
+      "creditos": 4,
+      "estado": false
     },
     {
       "codigo": 6,
-      "nombre": "CalculoI",
-      "Semestre": "Psiquico",
-      "Creditos": 2,
-      "Estado": false
+      "nombre": "Mecánica",
+      "semestre": "III",
+      "creditos": 4,
+      "estado": false
     }
   ]

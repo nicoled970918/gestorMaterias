@@ -89,83 +89,31 @@ class Materia
 </head>
 
 <body >
-    
-  <h1>Pénsum Académico</h1>
-  
-  <div class="visualizador">
-    <h2 id="codigo">Código:</h2>
-    <div  class="semestre1">
-            <p> Semestre I </p>
-            <div class="materia">
-                <h3> Calculo I </h3>
-                <h4>*5</h4>
-                <h5></h5>
-            </div>
-        </div>
-        <div class="semestre2">
-                <p> Semestre </p>
-                <div class="materia">
-                    <h3> Calculo I </h3>
-                    <h4>*5</h4>
-                    <h5></h5>
+    <!--<header>
+        <div id="pensum"><h1>PÉNSUM ACEDÉMICO</h1>
+        <div id="codEstudiante"></div><h2></h2></div>
+    </header>
+    <section>
+        <div id="visualizador">
+            <div name="semestre" class="semestre"><h1>Semestre</h1>
+                <div class="numSemestre">
+                    <h1 id="numeSemestre"></h1>
                 </div>
+                    <div name="materia" class="materia">
+                        <h3></h3>
+                    </div>
+            </div>
         </div>
+    </section> -->
 
-        <div class="semestre3">
-            <p> Semestre I </p>
-            <div class="materia">
-                <h3> Calculo I </h3>
-                <h4>*5</h4>
-                <h5></h5>
-            </div>
+    <div class="visualizador">
+        <h1>PÉNSUM ACADÉMICO</h1>
+        <h2>Código: </h2><h2 id="cod"></h2>
+        <div class="semestres" id="sems">
+        <div class="materias" id="mats">
+            
         </div>
-
-        <div class="semestre4">
-            <p id="pS"> Semestre IV </p>
-            <div class="materia">
-                <p> Ecuaciones Diferenciales Ordinarias </p>
-            </div>
         </div>
-
-        <div class="semestre5">
-            <p id="pS"> Semestre V </p>
-            <div class="materia">
-                <p> Análisis numérico </p>
-            </div>
-        </div>
-
-        <div class="semestre6">
-            <p id="pS"> Semestre VI </p>
-            <div class="materia">
-                <p> Ingeniería de Software II </p>
-            </div>
-        </div>
-        <div class="semestre7">
-            <p id="pS"> Semestre VII </p>
-            <div class="materia">
-                <p> Inteligencia Artificial </p>
-            </div>
-        </div>
-        <div class="semestre8">
-            <p id="pS"> Semestre VIII </p>
-            <div class="materia">
-                <p> Análisis numérico </p>
-            </div>
-        </div>
-        <div class="semestre9">
-            <p id="pS"> Semestre IX </p>
-            <div class="materia">
-                <p> Análisis numérico </p>
-            </div>
-        </div>
-        <div class="semestre10">
-            <p id="pS"> Semestre X </p>
-            <div class="materia">
-                <p> Cualquier cosa </p>
-            </div>
-        </div> 
-
-  </div>
-
+    </div>
 </body>
 </html>
