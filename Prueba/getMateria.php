@@ -12,7 +12,7 @@ if(isset($_GET["codEstudiante"]))
     if(!file_exists($archivo))
     {   
         //creo un archivo json con el codigo del estudiante 
-        $buf = fopen($arctfhivo,'w');
+        $buf = fopen($archivo,'w');
         // escribo en el archivo  la materias que me trae  materia.json
         fwrite($buf,$json);
         fclose($buf);
